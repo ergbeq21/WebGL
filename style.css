@@ -1,0 +1,64 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Canvas styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#glcanvas {
+  border: 3px solid #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  background-color: #000;
+  cursor: grab;
+  transition: box-shadow 0.3s ease;
+}
+
+#glcanvas:active {
+  cursor: grabbing;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
